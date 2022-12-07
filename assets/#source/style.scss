@@ -7,57 +7,30 @@
 
 .wrapper {
     position: relative;
-    background: url('./../images/bg-img.webp') -100px -20px,
-                url('../images/krug.png') center 950px;
+    background-image: url('./../images/bg-img.webp'),
+                url('../images/krug.png');
+    background-position:-100px -20px, center 850px;
     background-repeat: no-repeat;
     background-size: 110%, 170%;
 
-    // @media (max-width: 2000px) {
-    //     background: url('./../images/bg-img.webp') -100px -20px,
-    //                 url('../images/krug.png') center 950px;
-    //     background-repeat: no-repeat;
-    //     background-size: 110%, 170%;
-    // }
+    @media (max-width: 1280px) {
+        background-position: 0 -20px, center 850px;
+        background-size: 100%, 170%;   
+    }
 
-    // @media (min-width: 1441px) {
-    //     background: url('./../images/bg-img.webp') -100px -20px,
-    //                 url('../images/krug.png') center 950px;
-    //     background-repeat: no-repeat;
-    //     background-size: 110%, 170%;
-    // }
+    @media (max-width: 1024px) {
+        background-image: url('./../images/bg-img-3.webp'), none;    
+    }
 
-    // @media (max-width: 1440px) {
-    //     background: url('./../images/bg-img.webp') -100px -20px,
-    //                 url('../images/krug.png') center 850px;
-    //     background-repeat: no-repeat;
-    //     background-size: 110%, 170%;
-    // }
+    @media (max-width: 590px) {
+        background-image: url('./../images/bg-img-4.webp');
+        background-size: 105%;        
+    }
 
-    // @media (max-width: 1280px) {
-    //     background: url('./../images/bg-img-2.webp') 0px -20px,
-    //                 url('../images/krug.png') center 1050px;
-    //     background-repeat: no-repeat;
-    //     background-size: 100%, 170%;   
-    // }
-
-    // @media (max-width: 1024px) {
-    //     background: url('./../images/bg-img-3.webp') 0px -20px,
-    //                 url('../images/krug.png') center 1650px;
-    //     background-repeat: no-repeat;
-    //     background-size: 100%, 170%;     
-    // }
-
-    // @media (max-width: 590px) {
-    //     background: url('./../images/bg-img-4.webp') 0px -20px,
-    //                 url('../images/krug.png') center 2050px;
-    //     background-repeat: no-repeat;
-    //     background-size: 105%, 170%;        
-    // }
-
-    // @media (max-width: 450px) {
-    //     background-image: url('./../images/bg-img-5.webp');
-    //     background-size: 100%;    
-    // }
+    @media (max-width: 450px) {
+        background-image: url('./../images/bg-img-5.webp');
+        background-size: 100%;    
+    }
 }
 
 .header {

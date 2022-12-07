@@ -887,9 +887,33 @@ body {
 
 .wrapper {
   position: relative;
-  background: url("./../images/bg-img.webp") -100px -20px, url("../images/krug.png") center 950px;
+  background-image: url("./../images/bg-img.webp"), url("../images/krug.png");
+  background-position: -100px -20px, center 850px;
   background-repeat: no-repeat;
   background-size: 110%, 170%;
+}
+@media (max-width: 1280px) {
+  .wrapper {
+    background-position: 0 -20px, center 850px;
+    background-size: 100%, 170%;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    background-image: url("./../images/bg-img-3.webp"), none;
+  }
+}
+@media (max-width: 590px) {
+  .wrapper {
+    background-image: url("./../images/bg-img-4.webp");
+    background-size: 105%;
+  }
+}
+@media (max-width: 450px) {
+  .wrapper {
+    background-image: url("./../images/bg-img-5.webp");
+    background-size: 100%;
+  }
 }
 
 .header {
