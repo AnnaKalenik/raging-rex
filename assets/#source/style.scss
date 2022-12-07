@@ -6,30 +6,22 @@
 //-------
 
 .wrapper {
-    position: relative;
     background-image: url('./../images/bg-img.webp'),
-                url('../images/krug.png');
-    background-position:-100px -20px, center 850px;
+                      url('../images/krug.png');
+    background-position:-100px -20px, center 750px;
     background-repeat: no-repeat;
-    background-size: 110%, 170%;
+    background-size: 110%, 200%;
 
     @media (max-width: 1280px) {
-        background-position: 0 -20px, center 850px;
-        background-size: 100%, 170%;   
+        background-image: url('./../images/bg-img-2.webp');   
+        background-position: 0 -20px, center 950px;
+        background-size: 100%, 230%;   
     }
 
-    @media (max-width: 1024px) {
-        background-image: url('./../images/bg-img-3.webp'), none;    
-    }
-
-    @media (max-width: 590px) {
-        background-image: url('./../images/bg-img-4.webp');
-        background-size: 105%;        
-    }
-
-    @media (max-width: 450px) {
-        background-image: url('./../images/bg-img-5.webp');
-        background-size: 100%;    
+    @media (max-width: 890px) {
+        background-image: url('./../images/bg-img-6.png');
+        background-position: center -20px;
+        background-size: auto;        
     }
 }
 
