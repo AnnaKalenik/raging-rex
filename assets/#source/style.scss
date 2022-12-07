@@ -7,7 +7,7 @@
 
 .wrapper {
     background-image: url('./../images/bg-img.webp'),
-                      url('../images/krug.png');
+                      url('../images/krug.webp');
     background-position:-100px -20px, center 750px;
     background-repeat: no-repeat;
     background-size: 110%, 200%;
@@ -19,7 +19,7 @@
     }
 
     @media (max-width: 890px) {
-        background-image: url('./../images/bg-img-6.png');
+        background-image: url('./../images/bg-img-3.webp');
         background-position: center -20px;
         background-size: auto;        
     }
