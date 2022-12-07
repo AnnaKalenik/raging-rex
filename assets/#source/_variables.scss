@@ -1,0 +1,126 @@
+$site-bg: #35391F;
+
+$header-bg: linear-gradient(90deg, rgba(53, 57, 31, 0) 0%, rgba(116, 126, 60, 0.7) 47.4%, rgba(53, 57, 31, 0) 100%);
+$header-shadow: 0px 6px 10px rgba(0, 0, 0, 0.44);
+
+$hero-screen-bg:  rgba(166, 195, 94, 0.16);
+$hero-screen-border:  none;
+$hero-screen-shadow: 0px 2px 30px #100C0A, inset 0px -10px 20px #3A2B16, inset 0px 10px 20px rgba(255, 255, 255, 0.25);
+
+$spin-item-big-bg: rgba(135, 179, 92, 0.14);
+$spin-item-big-shadow: 0px 10px 20px rgba(0, 0, 0, 0.34), inset 0px -10px 20px #2C3A16, inset 0px 10px 20px rgba(204, 255, 96, 0.29);
+$spin-item-small-bg: rgba(56, 59, 33, 0.7);
+$spin-item-small-shadow: 0px 4px 15px rgba(6, 12, 0, 0.7);
+$spin-item-bg: rgba(53, 57, 31, 0.75);
+$spin-item-shadow: 0px 10px 15px rgba(6, 12, 0, 0.7);
+
+$rating-big-bg: linear-gradient(270deg, rgba(32, 33, 31, 0.3) 23.94%, rgba(32, 33, 31, 0) 79.85%);
+$rating-small-bg: linear-gradient(270deg, rgba(161, 216, 58, 0.4) 23.94%, rgba(159, 214, 58, 0) 79.85%);
+$rating-bg: linear-gradient(270deg, rgba(213, 228, 127, 0.4) 23.94%, rgba(213, 228, 127, 0) 68.95%);
+
+$demo-item-bg: linear-gradient(to top, rgba(53, 57, 31, 0.75), rgba(53, 57, 31, 0.75)), url('../images/bg-card4.webp');
+$demo-item-shadow: 0px 10px 20px #201300;
+
+$faq-bg: rgba(213, 228, 127, 0.2);
+$faq-shadow: 0px 10px 20px #201300;
+
+$footer-bg:  linear-gradient(90deg, rgba(53, 57, 31, 0) 0%, rgba(116, 126, 60, 0.7) 47.4%, rgba(53, 57, 31, 0) 100%);
+$footer-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+$txt-white: #FFFFFF;
+$txt-dark: #3A2B16;
+$txt-main-title: #D6ED4B;
+$txt-title: #D6ED4B;
+$txt-spin-subtitle: #FFFFFF;
+$txt-demo-subtitle: #FFFFFF;
+$txt-footer: #FFFFFF;
+
+$btn-2d-bg: #DFF26A;
+$btn-2d-border: 2px solid #3A2B16;
+$btn-2d-shadow: 2px 6px 13px #160E03, 0px -2px 40px rgba(255, 250, 134, 0.8);
+
+$btn-2d-transp-bg: rgba(255, 255, 255, 0.01);
+$btn-2d-transp-border: 1px solid #DFF26A;
+$btn-2d-transp-txt-color: #DFF26A;
+
+$btn-3d-bg: linear-gradient(116.75deg, #F2FCB3 13.09%, #D6ED4B 81.41%);
+$btn-3d-bg-hover: linear-gradient(116.75deg, #f3ffa4 13.09%, #dcff13 81.41%);
+$btn-3d-border: 0.5px solid #3A2B16;
+$btn-3d-shadow: 2px 6px 13px #160E03, 0px -2px 40px rgba(255, 250, 134, 0.8);
+
+$btn-transp-bg: transparent;
+$btn-transp-bg-hover: rgba(255, 255, 255, 0.2);
+$btn-transp-border: 1px solid #EDFE82;
+$btn-transp-color: #EDFE82;
+
+$btn-top-bg: #35391F;
+$btn-top-bg-hover: #5b6234;
+$btn-top-border: 1px solid rgba(214, 237, 75, 1);
+$btn-top-shadow: 2px 10px 20px rgba(255, 255, 255, 0.13);
+$btn-top-shadow-hover: 2px 10px 20px rgba(255, 255, 255, 0.403);
+
+$btn-radius: 20px;
+$block-radius: 20px;
+
+$margin-top: 72px;
+
+@mixin flex-container ($dir: row,
+                      $jus: center,
+                      $ali: center,
+                      $wrap: wrap) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $ali;
+    flex-wrap: $wrap;
+}
+
+@mixin button-style ($cl: $txt-dark,
+                    $fw: 700,
+                    $fs: 18px,
+                    $lh: 27px, 
+                    $ls: -0.025em,
+                    $bor: $btn-2d-border,
+                    $bor-rad: $btn-radius,
+                    $bck: $btn-2d-bg,
+                    $bsh: $btn-2d-shadow,
+                    $pd: 14.5px 58.5px) {
+    color: $cl;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-transform: uppercase;
+    border: $bor;
+    border-radius: $bor-rad;
+    background: $bck;
+    box-shadow: $bsh;
+    padding: $pd;
+}
+
+@mixin title ($col: $txt-title,
+            $fs: 45px,
+            $lh: 68px,
+            $tt: normal) {
+
+    color: $col;
+    font-weight: 700;
+    font-size: $fs;
+    line-height: $lh;
+    text-transform: $tt;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+@mixin block ($bck: linear-gradient(180deg, rgba(60, 66, 24, 0) 0%, #3F4618 100%),
+            $bor: none,
+            $bor-rad: $block-radius,
+            $bsh: 0px 10px 20px #201300,
+            $pad: 37px 61px) {
+
+    background: $bck;
+    border: $bor;
+    border-radius: $bor-rad;
+    box-shadow: $bsh;
+    padding: $pad;
+}
