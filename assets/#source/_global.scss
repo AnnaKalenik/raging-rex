@@ -519,8 +519,8 @@ body {
     display: none;
     position: fixed;
     box-sizing: border-box;
-    width: 97px;
-    height: 97px;
+    width: 76px;
+    height: 76px;
     right: 150px;
     bottom: 95px;
     background: $btn-top-bg;
@@ -539,8 +539,8 @@ body {
     }
 
     @media (max-width: 1024px) {
-        width: 70px;
-        height: 70px;
+        width: 65px;
+        height: 65px;
         right: 15px;
         bottom: 20px;
         background-size: 40%;
