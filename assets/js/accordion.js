@@ -1,5 +1,5 @@
 export default function accordion() {
-    const ACCORD = document.querySelectorAll('#accordion-top');
+    const ACCORD = document.querySelectorAll('.faq__top-panel');
 
     for (let i = 0; i < ACCORD.length; i++) {
         ACCORD[i].addEventListener('click', function() {
@@ -7,10 +7,10 @@ export default function accordion() {
 
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
-                this.querySelector('#accordion-btn').classList.remove('faq__btn_active');
+                this.querySelector('.faq__btn').classList.remove('faq__btn_active');
             } else {
                 panel.style.maxHeight = panel.scrollHeight + 'px';
-                this.querySelector('#accordion-btn').classList.add('faq__btn_active');
+                this.querySelector('.faq__btn').classList.add('faq__btn_active');
             }  
         });
     }
