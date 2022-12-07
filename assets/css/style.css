@@ -886,7 +886,7 @@ body {
 }
 
 .wrapper {
-  background-image: url("./../images/bg-img.webp"), url("../images/krug.webp");
+  background-image: url("./../images/bg-img.webp"), url("./../icons/krug.svg");
   background-position: -100px -20px, center 750px;
   background-repeat: no-repeat;
   background-size: 110%, 200%;
