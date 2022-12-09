@@ -129,6 +129,11 @@ body {
   }
 }
 
+.logo__img {
+  width: 100%;
+  height: 100%;
+}
+
 .jackpot {
   text-transform: uppercase;
 }
@@ -485,6 +490,7 @@ body {
 }
 .text-section__img {
   width: 100%;
+  height: auto;
 }
 .text-section__btn-3d {
   font-size: 20px;
@@ -815,8 +821,8 @@ body {
   position: fixed;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 97px;
-  height: 97px;
+  width: 76px;
+  height: 76px;
   right: 150px;
   bottom: 95px;
   background: #41311A;
@@ -840,8 +846,8 @@ body {
 }
 @media (max-width: 1024px) {
   .btn-to-top {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     right: 15px;
     bottom: 20px;
     background-size: 40%;
@@ -949,13 +955,10 @@ body {
   .header__logo {
     margin-bottom: 0px;
     width: 175px;
-    height: auto;
   }
 }
 @media (max-width: 939px) {
   .header__img {
-    width: 100%;
-    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1783,6 +1786,10 @@ tr:not(:last-child)::after {
   .demo__icons {
     width: 100%;
   }
+}
+.demo__icon {
+  width: auto;
+  height: 16.11px;
 }
 .demo__col-3 {
   display: -webkit-box;
