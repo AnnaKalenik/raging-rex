@@ -129,11 +129,6 @@ body {
   }
 }
 
-.logo__img {
-  width: 100%;
-  height: 100%;
-}
-
 .jackpot {
   text-transform: uppercase;
 }
@@ -956,10 +951,13 @@ body {
   .header__logo {
     margin-bottom: 0px;
     width: 175px;
+    height: auto;
   }
 }
 @media (max-width: 939px) {
   .header__img {
+    width: 100%;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }

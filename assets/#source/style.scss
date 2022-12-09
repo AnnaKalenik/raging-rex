@@ -48,11 +48,14 @@
         @media (max-width: 939px) {
             margin-bottom: 0px;
             width: 175px;
+            height: auto;
         }
     }
     
     &__img {
         @media (max-width: 939px) {
+            width: 100%;
+            height: 100%;
             object-fit: cover; 
         }
     }
