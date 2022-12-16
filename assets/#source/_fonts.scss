@@ -4,6 +4,7 @@
     font-weight: 400;
     src: local('Poppins'),
         url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
     font-weight: 500;
     src: local('Poppins'),
         url('../fonts/Poppins/Poppins-Medium.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
     font-weight: 600;
     src: local('Poppins'),
         url('../fonts/Poppins/Poppins-SemiBold.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
@@ -28,4 +31,5 @@
     font-weight: 700;
     src: local('Poppins'),
         url('../fonts/Poppins/Poppins-Bold.woff') format('woff');
+    font-display: swap;    
 }
